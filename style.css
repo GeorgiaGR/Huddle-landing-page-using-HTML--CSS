@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+:root {
+--Pink: hsl(322, 100%, 66%);
+--Very-Pale-Cyan: hsl(193, 100%, 96%);
+--Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Global selectors ---------- */
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a::hover {
+  background: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 2.1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: .8rem;
+}
+
+h2 {
+  font-size: 17px;
+  margin-top: 1.8rem;
+}
+
+p {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  padding-inline: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+/* ---------- Body ---------- */
+
+body {
+  max-width: 375px;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  background-color: var(--Very-Pale-Cyan);
+  background-image: url("https://georgiagr.github.io/landing_page/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 375px;
+  height: 100%;
+}
+
+header {    
+  height: 100vh;
+  max-width: 375px;
+}
+
+.hero {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+}
+
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+}
+
+.grow__together,
+.conversations,
+.your__users,
+.cta {
+  background-color: #fff;
+  padding: 1rem 1rem;
+}
+
+.grow__together {
+  padding-top: 2.5rem;
+}
+
+.grow__container,
+.convers__container,
+.users__container,
+.cta__container {
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 20px;
+  padding: 2.5rem 1rem;
+}
+
+.cta__container {
+  padding-block: 1.5rem;
+}
+
+footer {
+  background-color: var(--Very-Dark-Cyan);
+  color: #fff;
+  width: 100%;
+}
+
+.footer__container {
+  margin: auto;
+  padding-inline: 1rem;
+}
+
+/* ---------- Properties ---------- */
+
+.logo {
+  width: 8rem;
+  padding: 2rem 1rem;
+}
+
+.menu__btn {
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 10px 0px, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  font-weight: 700;
+  
+  margin: 1.8rem 1rem;
+  padding: .4rem 1.8rem;
+  float: right;
+}
+
+.hero__btn,
+.btn {
+  color: #fff;  
+  background: var(--Pink);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-radius: 30px;
+  border: none;
+  
+  font-size: .85rem;
+  font-weight: 700;
+} 
+
+.hero__btn {
+  width: min(100% - 8rem, 50rem);
+  margin: 0 auto; 
+  padding: .8rem 1.8rem; 
+}
+
+.btn {
+  width: min(100% - 4rem, 50rem);
+  margin: 1.1rem auto 1rem; 
+  padding: .8rem 2.8rem; 
+}
+
+.hero img {
+	width: min(100% - 5rem, 50rem);
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+
+.grow_together img {
+  margin-top: 3rem;
+}
+
+/* footer > .logo {
+  color: #fff;
+} */
+
+.copyright {
+  font-size: 12px;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+.icons i {
+  margin-inline: .6rem;
+  margin-top: 2.5rem;
+/*   border-radius: 50px;
+  border: 1px solid #fff; */
+}
+
+.contact-info p {
+  display: block;  
+  margin: 0;
+  padding: 0;
+}
+
+.inline__img {
+  display: block;
+  width: 1rem;
+  margin-inline-end: 1.1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-block: 1rem; 
+}
+
+.contact-info {
+  padding-top: 2.8rem;
+}
+
+.flex__location {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.list {
+  margin-block-start: 3.2rem;
+} 
+
+.list__element {
+  margin-block: 1rem;
+} 
+
+/* .list__element:first-child {
+  margin-top: 3rem;
+} */
+
+.hero p {
+  padding-inline: 2.8rem;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+footer p {
+  text-align: left;
+}
+
+/* ---------- media queries ---------- */
+
+@media only screen and (min-width: 376px) {
+  body {
+      max-width: 1440px;
+  }
+  .container {
+  background-color: var(--Very-Pale-Cyan);
+  background-image: url("https://georgiagr.github.io/landing_page/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  height: 100%;
+}
+
+header {    
+  height: 100vh;
+  max-width: 1440px;
+}
+
+.hero {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+}
+}
