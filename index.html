@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="https://kit.fontawesome.com/69fe054455.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
@@ -14,57 +15,99 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+  <body> 
+    <header class="container">
+      <header>
+        <div class="menu">
+          <button class="menu__btn">Try It Free</button>
+          <div class="logo">
+          <img src="https://georgiagr.github.io/Huddle-landing-page-using-HTML--CSS/images/logo.svg">
+          </div>
+        </div>
 
-  Try It Free
+        <div class="hero">
+        <h1>Build The Community <br> Your Fans Will Love</h1> 
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>   
+        <button  class="hero__btn btn">Get Started For Free</button>
+        <img src="https://georgiagr.github.io/Huddle-landing-page-using-HTML--CSS/images/illustration-mockups.svg">
+        </div>
+      </header>
 
-  Build The Community Your Fans Will Love
+      <div class="grow__together">
+        <div class="grow__container">
+      <img src="https://georgiagr.github.io/Huddle-landing-page-using-HTML--CSS/images/illustration-grow-together.svg">
+      <h2>Grow Together</h2> 
+      <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p> 
+        </div>
+      </div>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+      <div class="conversations">
+        <div class="convers__container">
+      <img src="https://georgiagr.github.io/Huddle-landing-page-using-HTML--CSS/images/illustration-flowing-conversation.svg">
+      <h2>Flowing Conversations</h2> 
+      <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+        </div>
+      </div>
 
-  Get Started For Free
+      <div class="your__users">
+        <div class="users__container">
+      <img src="https://georgiagr.github.io/Huddle-landing-page-using-HTML--CSS/images/illustration-your-users.svg">
+      <h2>Your Users</h2> 
+      <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+        </div>
+      </div> 
+      <div class="cta">
+        <div class="cta__container">
+      <h2>Ready To Build Your Community?</h2> 
+      <button class="btn">Get Started For Free</button>
+        </div>
+      </div>
+      <footer>
+        <div class="footer__container">
+    <!--       <div class="logo">
+          <img src="https://georgiagr.github.io/Huddle-landing-page-using-HTML--CSS/images/logo.svg">
+          </div> -->
 
-  Grow Together
+          <div class="contact-info">
+            <div class="flex flex__location">
+              <img src="https://georgiagr.github.io/Huddle-landing-page-using-HTML--CSS/images/icon-location.svg" class="inline__img">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p> 
+            </div>
+            <div class="flex">
+              <img src="https://georgiagr.github.io/Huddle-landing-page-using-HTML--CSS/images/icon-phone.svg" class="inline__img">
+              <p>+1-543-123-4567</p>
+            </div>
+            <div class="flex">
+              <img src="https://georgiagr.github.io/Huddle-landing-page-using-HTML--CSS/images/icon-email.svg" class="inline__img">
+              <p>example@huddle.com</p>  
+            </div>
+          </div>
 
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
+          <nav>
+            <ul class="list">
+              <li class="list__element"><a link href="#">About Us</a></li> 
+              <li class="list__element"><a link href="#">What We Do</a></li> 
+              <li class="list__element"><a link href="#">FAQ</a></li> 
+              <li class="list__element"><a link href="#">Career</a></li> 
+              <li class="list__element"><a link href="#">Blog</a></li> 
+              <li class="list__element"><a link href="#">Contact Us</a></li> 
+            </ul>
+          </nav>
+          <div class="buttom__footer">
+            <div class="icons">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+            </div>
+            <p class="copyright">&copy; <!--©--> Copyright 2018 Huddle. All rights reserved.</p>
 
-  Flowing Conversations
-
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.
-
-  Your Users
-
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
-
-  +1-543-123-4567
-  example@huddle.com
-
-  About Us
-  What We Do
-  FAQ
-
-  Career
-  Blog
-  Contact Us
-
-  &copy; Copyright 2018 Huddle. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+            <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://codepen.io/georgiagr" target="_blank">GeorgiaGR_</a>.
+            </p>
+         </div>
+        </div>
+       </footer>
+     </div>
+    </body>
 </html>
